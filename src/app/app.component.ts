@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as data from 'assets/data/sample-the-odds-api.json';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+	menuOptions = [{name: 'The Odds Api'}, {name: 'menu1'}, {name: 'menu2'}];
 
   ngOnInit() {
   	console.log(data);
