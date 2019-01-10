@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { LinesCentralComponent } from './linesCentral/linesCentral.component';
+import { GameComponent } from './linesCentral/game/game.component';
 
 
 // TODO since this app is small, for now, we can just have one module 
@@ -12,7 +14,9 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinesCentralComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule
