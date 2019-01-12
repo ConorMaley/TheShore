@@ -1,5 +1,8 @@
-.game {
-	background-color: #CCC;
+.game-container {
+	box-shadow: grey 0px 0px 10px;
+}
+.game-header {
+	text-align: center;	
 }
 .home-team {
 	color: green;
