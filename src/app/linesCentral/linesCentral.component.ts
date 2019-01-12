@@ -5,7 +5,7 @@ import { LineCentralService } from './linesCentral.service';
 @Component({
   selector: 'lines-central',
   templateUrl: './linesCentral.component.html',
-  styles: ['./linesCentral.component.css']
+  styleUrls: ['./linesCentral.component.css']
 })
 export class LinesCentralComponent implements OnInit {
 	games

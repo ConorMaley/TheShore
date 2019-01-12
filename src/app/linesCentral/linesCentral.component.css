@@ -1,6 +1,9 @@
 div {
-	background-color: gray;
+	background-color: #DDD;
 }
 .game {
+	margin: 10px;
+}
+.games-container {
 	margin: 10px;
 }
