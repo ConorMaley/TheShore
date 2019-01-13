@@ -5,5 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-	menuOptions = [{name: 'The Odds Api'}, {name: 'menu1'}, {name: 'menu2'}];
+	menuOptions = [
+		{name: 'Home', path:'Home'}, 
+		{name: 'The Odds Api', path:'LinesCentral'}, 
+		{name: 'menu2', path:'menu2'}
+	];
 }

@@ -6,7 +6,7 @@
 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<ul class="navbar-nav">
 			<li class="nav-item" *ngFor="let menuOption of menuOptions">
-				<a class="nav-link" href="#">{{menuOption.name}}</a>
+				<a class="nav-link" href="#" routerLink="{{menuOption.path}}" routerLinkActive="active">{{menuOption.name}}</a>
 			</li>
 		</ul>
 	</div>
