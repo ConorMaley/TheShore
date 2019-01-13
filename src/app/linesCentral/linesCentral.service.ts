@@ -13,13 +13,28 @@ export class LineCentralService {
 				homeTeam: home_team,
 				awayTeam: getAwayTeam(home_team, game.teams),
 				timeStamp: game.commence_time,
-				sites: game.sites
+				lines: getLines(game.sites)
 			}
 		}
 		function getAwayTeam(homeTeam, homeAwayArray) {
 			return homeAwayArray.filter(team => {
 				return team !== homeTeam;
 			})[0];
+		}
+		function getLines(sites) {
+			var lines = []
+			sites.forEach(site => {
+				var h2hArray = site.odds.h2h;
+
+				lines.push({
+					name: site.site_nice,
+					lastUpdate: site.last_update,
+					awayH2H: h2hArray[0],
+					homeH2H: h2hArray[1]
+				});
+			});
+
+			return lines;
 		}
 		function getProbabilityOdds(decimalOdds) {
 			// TODO
