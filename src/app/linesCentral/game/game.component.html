@@ -1,8 +1,8 @@
 <div class="game-container">
-	<h4 class="game-header">{{gameData.awayTeam}} (avg ML OR +/-) at {{gameData.homeTeam}} (avg ML)</h4>
+	<h4 class="game-header">{{gameData.awayTeam}} (median ML OR +/-) at {{gameData.homeTeam}}</h4>
 	<div class="lines">
 		<div *ngFor="let site of gameData.lines">
-			{{site}}
+			{{site.name}}
 		</div>
 	</div>
 </div> 
