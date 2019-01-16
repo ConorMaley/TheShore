@@ -13,6 +13,10 @@ import { GameComponent } from './linesCentral/game/game.component';
 const appRoutes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'LinesCentral', component: LinesCentralComponent },
+  { path: '',
+    redirectTo: '/Home',
+    pathMatch: 'full'
+  },
   { path: '**', component: DummyPageComponent } // page not found 
   // { path: 'LinesCentral:id', component: LinesCentralComponent }
   // {
