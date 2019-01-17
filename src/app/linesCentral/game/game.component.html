@@ -1,8 +1,8 @@
 <div class="game-container">
-	<h4 class="game-header">{{gameData.awayTeam}} ({{gameData.lines.awayMedML}}) at {{gameData.homeTeam}} ({{gameData.lines.homeMedML}})</h4>
+	<h4 class="game-header">{{gameData.awayTeam}} ({{gameData.lines.awayAvgH2H | number}}) at {{gameData.homeTeam}} ({{gameData.lines.homeAvgH2H | number}})</h4>
 	<div class="lines">
 		<div *ngFor="let site of gameData.lines.siteLines">
-			{{site.name}} : {{site.siteOdds.awayH2H}} / {{site.siteOdds.homeH2H}} || {{site.siteOdds.awayProb}} / {{site.siteOdds.homeProb}}
+			{{site.name}} : {{site.siteOdds.awayH2H}} / {{site.siteOdds.homeH2H}}
 		</div>
 	</div>
 </div> 

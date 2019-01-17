@@ -24,8 +24,8 @@ export class LineCentralService {
 		function getLines(sites) {
 			var lines,
 				siteLines = [],
-				homeML = 0,
-				awayML = 0;
+				awayAvgH2H = 0,
+				homeAvgH2H = 0;
 
 			sites.forEach(site => {
 				var h2hArray = site.odds.h2h;
@@ -35,10 +35,18 @@ export class LineCentralService {
 					lastUpdate: site.last_update,
 					siteOdds: getConvertedOdds(h2hArray)
 				});
+
+				awayAvgH2H += h2hArray[0];
+				homeAvgH2H += h2hArray[1];
 			});
+
+			awayAvgH2H /= sites.length;
+			homeAvgH2H /= sites.length;
 
 			lines = {
 				siteLines: siteLines,
+				awayAvgH2H: awayAvgH2H, //TODO 
+				homeAvgH2H: homeAvgH2H, // TODO
 				awayMedML: '-110', //TODO 
 				homeMedML: '-110' // TODO
 			}
