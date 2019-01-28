@@ -9,11 +9,20 @@ import { EspnScraperService } from './espnScraper.service';
 })
 export class ESPNScraperComponent implements OnInit {
 	data
+	leagueID
+	year
 
-  constructor (private espnScraperService: EspnScraperService) { }
+  	constructor (private espnScraperService: EspnScraperService) { }
+
+  	getData() {
+  		console.log('TODO');
+  		console.log(this.leagueID);
+  		console.log(this.year);
+  	}
   
-  ngOnInit() {
-  	this.data = this.espnScraperService.getData();
-  	console.log(this.data);
-  }
+  	ngOnInit() {
+  		this.year = 2017;
+  		// this.data = this.espnScraperService.getData();
+  		// console.log(this.data);
+  	}
 }
