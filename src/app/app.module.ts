@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LinesCentralComponent } from './linesCentral/linesCentral.component';
+import { ESPNScraperComponent } from './espnScraper/espnScraper.component';
 import { HomePageComponent } from './homePage/homePage.component';
 import { DummyPageComponent } from './dummyPage/dummyPage.component';
 import { GameComponent } from './linesCentral/game/game.component';
@@ -13,6 +14,7 @@ import { GameComponent } from './linesCentral/game/game.component';
 const appRoutes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'LinesCentral', component: LinesCentralComponent },
+  { path: 'ESPNScraper', component: ESPNScraperComponent },
   { path: '',
     redirectTo: '/Home',
     pathMatch: 'full'
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     LinesCentralComponent,
     GameComponent,
     HomePageComponent,
-    DummyPageComponent
+    DummyPageComponent,
+    ESPNScraperComponent
   ],
   imports: [
     BrowserModule,
