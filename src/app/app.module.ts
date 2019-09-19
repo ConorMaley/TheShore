@@ -9,13 +9,18 @@ import { HeaderComponent } from './header/header.component';
 import { LinesCentralComponent } from './linesCentral/linesCentral.component';
 import { ESPNScraperComponent } from './espnScraper/espnScraper.component';
 import { HomePageComponent } from './homePage/homePage.component';
+import { NFLScheduleComponent } from './nflSchedule/nflSchedule.component';
 import { DummyPageComponent } from './dummyPage/dummyPage.component';
+import { DraftDayComponent } from './draftDay/draftDay.component';
+import { PlayerCardComponent } from './draftDay/playerCard/playerCard.component';
 import { GameComponent } from './linesCentral/game/game.component';
 
 const appRoutes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'LinesCentral', component: LinesCentralComponent },
   { path: 'ESPNScraper', component: ESPNScraperComponent },
+  { path: 'DraftDay', component: DraftDayComponent },
+  { path: 'NFLSchedule', component: NFLScheduleComponent },
   { path: '',
     redirectTo: '/Home',
     pathMatch: 'full'
@@ -39,7 +44,9 @@ const appRoutes: Routes = [
     GameComponent,
     HomePageComponent,
     DummyPageComponent,
-    ESPNScraperComponent
+    ESPNScraperComponent,
+    DraftDayComponent,
+    NFLScheduleComponent
   ],
   imports: [
     BrowserModule,

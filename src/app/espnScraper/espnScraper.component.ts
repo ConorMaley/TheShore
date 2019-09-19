@@ -21,8 +21,8 @@ export class ESPNScraperComponent implements OnInit {
   	}
   
   	ngOnInit() {
-  		this.year = 2017;
-  		// this.data = this.espnScraperService.getData();
+  		// this.year = 2017;
+  		this.data = this.espnScraperService.getData();
   		// console.log(this.data);
   	}
 }

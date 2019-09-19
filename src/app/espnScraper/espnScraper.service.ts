@@ -18,7 +18,7 @@ export class EspnScraperService {
 		BaseAPIObject.setCookies(cookies2); // fire and forget
 
 		// const league = new League({ leagueId: 826265, seasonId: 2017 });
-		const league = new League({ leagueId: 826265, seasonId: 2018 });
+		const league = new League({ leagueId: 336358, seasonId: 2018 });
 		league.read().then(() => console.log(league)); // Prints loaded league
 	}
 }
