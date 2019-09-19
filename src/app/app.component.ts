@@ -8,6 +8,8 @@ export class AppComponent {
 	menuOptions = [
 		{name: 'Home', path:'Home'}, 
 		{name: 'The Odds Api', path:'LinesCentral'}, 
-		{name: 'menu2', path:'menu2'}
+		{name: 'ESPN FF Web Scraper', path:'ESPNScraper'},
+		{name: 'Draft Board 2019', path:'DraftDay'},
+		{name: 'NFL Schedule Pick\'em 2019', path:'NFLSchedule'}
 	];
 }

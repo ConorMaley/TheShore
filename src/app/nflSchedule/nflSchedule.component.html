@@ -1,0 +1,11 @@
+<div>
+	<h1>NFL Schedule 2019</h1>
+	<div class="week-container" *ngFor="let week of schedule; let weekNum = index">
+		<div *ngIf="weekNum > 0">
+			<h4 class="week-header">Week {{weekNum}} Schedule</h4>
+			<div *ngFor="let game of week">
+				{{game.visitor}} @ {{game.home}}
+			</div>
+		</div>
+	</div>
+</div> 
