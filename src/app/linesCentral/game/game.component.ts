@@ -25,6 +25,9 @@ export interface Lines {
 	siteOdds: Odds;
 	lastUpdate: Number;
 	name: String;
+	awayAvgH2H: String;
+	homeAvgH2H: String;
+	siteLines: String;
 }
 
 export interface GameData {
