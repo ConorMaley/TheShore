@@ -12,10 +12,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
+~~Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.~~
 
 [This link](https://github.com/angular/angular-cli/wiki/stories-github-pages) contains info on how to build to github pages.
+
+Prod builds have a bunch of other crap we need to clean up to run our code so to push to github pages do this instead: `npm run build-pages`
 
 ## Running unit tests
 
