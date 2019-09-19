@@ -46,7 +46,8 @@ const appRoutes: Routes = [
     DummyPageComponent,
     ESPNScraperComponent,
     DraftDayComponent,
-    NFLScheduleComponent
+    NFLScheduleComponent,
+    PlayerCardComponent
   ],
   imports: [
     BrowserModule,
