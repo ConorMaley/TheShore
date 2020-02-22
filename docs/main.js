@@ -787,7 +787,7 @@ var LineCentralService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "div {\r\n\tpadding: 10px;\r\n}\r\n\r\n.week-container {\r\n\tdisplay: flex;\r\n\tjustify-content: center;\r\n}\r\n\r\n.week-header {\r\n\ttext-align: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmZsU2NoZWR1bGUvbmZsU2NoZWR1bGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNDLGNBQWM7Q0FDZDs7QUFFRDtDQUNDLGNBQWM7Q0FDZCx3QkFBd0I7Q0FDeEI7O0FBRUQ7Q0FDQyxtQkFBbUI7Q0FDbkIiLCJmaWxlIjoic3JjL2FwcC9uZmxTY2hlZHVsZS9uZmxTY2hlZHVsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2IHtcclxuXHRwYWRkaW5nOiAxMHB4O1xyXG59XHJcblxyXG4ud2Vlay1jb250YWluZXIge1xyXG5cdGRpc3BsYXk6IGZsZXg7XHJcblx0anVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi53ZWVrLWhlYWRlciB7XHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG59Il19 */"
+module.exports = "div {\r\n\tpadding: 10px;\r\n}\r\n\r\n.week-container {\r\n\tdisplay: flex;\r\n\tjustify-content: center;\r\n}\r\n\r\n.week-header {\r\n\ttext-align: center;\r\n}\r\n\r\n.game-container {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n}\r\n\r\n.home-team {\r\n\twidth: 170px;\r\n}\r\n\r\n.away-team {\r\n\twidth: 170px;\r\n\ttext-align: right;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmZsU2NoZWR1bGUvbmZsU2NoZWR1bGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNDLGNBQWM7Q0FDZDs7QUFFRDtDQUNDLGNBQWM7Q0FDZCx3QkFBd0I7Q0FDeEI7O0FBRUQ7Q0FDQyxtQkFBbUI7Q0FDbkI7O0FBRUQ7Q0FDQyxjQUFjO0NBQ2QsK0JBQStCO0NBQy9COztBQUVEO0NBQ0MsYUFBYTtDQUNiOztBQUVEO0NBQ0MsYUFBYTtDQUNiLGtCQUFrQjtDQUNsQiIsImZpbGUiOiJzcmMvYXBwL25mbFNjaGVkdWxlL25mbFNjaGVkdWxlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYge1xyXG5cdHBhZGRpbmc6IDEwcHg7XHJcbn1cclxuXHJcbi53ZWVrLWNvbnRhaW5lciB7XHJcblx0ZGlzcGxheTogZmxleDtcclxuXHRqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLndlZWstaGVhZGVyIHtcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5nYW1lLWNvbnRhaW5lciB7XHJcblx0ZGlzcGxheTogZmxleDtcclxuXHRqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbn1cclxuXHJcbi5ob21lLXRlYW0ge1xyXG5cdHdpZHRoOiAxNzBweDtcclxufVxyXG5cclxuLmF3YXktdGVhbSB7XHJcblx0d2lkdGg6IDE3MHB4O1xyXG5cdHRleHQtYWxpZ246IHJpZ2h0O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -798,7 +798,7 @@ module.exports = "div {\r\n\tpadding: 10px;\r\n}\r\n\r\n.week-container {\r\n\td
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n\t<h1>NFL Schedule 2019</h1>\r\n\t<div class=\"week-container\" *ngFor=\"let week of schedule; let weekNum = index\">\r\n\t\t<div *ngIf=\"weekNum > 0\">\r\n\t\t\t<h4 class=\"week-header\">Week {{weekNum}} Schedule</h4>\r\n\t\t\t<div *ngFor=\"let game of week\">\r\n\t\t\t\t{{game.visitor}} @ {{game.home}}\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div> "
+module.exports = "<div>\r\n\t<h1>NFL Schedule 2019</h1>\r\n\t<div class=\"week-container\" *ngFor=\"let week of schedule; let weekNum = index\">\r\n\t\t<div *ngIf=\"weekNum > 0\">\r\n\t\t\t<h4 class=\"week-header\">Week {{weekNum}} Schedule</h4>\r\n\t\t\t<div class=\"game-container\"*ngFor=\"let game of week\">\r\n\t\t\t\t<!-- TODO probably in the future replace this with bootstrap columns... \r\n\t\t\t\t\tmaybe... this way might look better --> \r\n\t\t\t\t<span class=\"home-team\">{{game.visitor}}</span> <span>@</span> <span class=\"away-team\">{{game.home}}</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div> "
 
 /***/ }),
 

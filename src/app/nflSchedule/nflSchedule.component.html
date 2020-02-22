@@ -3,8 +3,10 @@
 	<div class="week-container" *ngFor="let week of schedule; let weekNum = index">
 		<div *ngIf="weekNum > 0">
 			<h4 class="week-header">Week {{weekNum}} Schedule</h4>
-			<div *ngFor="let game of week">
-				{{game.visitor}} @ {{game.home}}
+			<div class="game-container"*ngFor="let game of week">
+				<!-- TODO probably in the future replace this with bootstrap columns... 
+					maybe... this way might look better --> 
+				<span class="home-team">{{game.visitor}}</span> <span>@</span> <span class="away-team">{{game.home}}</span>
 			</div>
 		</div>
 	</div>

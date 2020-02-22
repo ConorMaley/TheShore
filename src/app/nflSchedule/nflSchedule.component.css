@@ -10,3 +10,17 @@ div {
 .week-header {
 	text-align: center;
 }
+
+.game-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-team {
+	width: 170px;
+}
+
+.away-team {
+	width: 170px;
+	text-align: right;
+}
