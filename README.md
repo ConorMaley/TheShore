@@ -14,9 +14,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ~~Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.~~
 
+### Publshing to github pages
+
 [This link](https://github.com/angular/angular-cli/wiki/stories-github-pages) contains info on how to build to github pages.
 
-Prod builds have a bunch of other crap we need to clean up to run our code so to push to github pages do this instead: `npm run build-pages`
+- run `npm run build-pages` 
+    - takes a few minutes
+- there should be a new `docs/index.html` file, rename it to `docs/404.html`
+    - should probably write a script to do this
+- commit and push
+
+Check out your changes [here](https://conormaley.github.io/TheShore)!
 
 ## Running unit tests
 
